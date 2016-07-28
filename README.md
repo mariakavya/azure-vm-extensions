@@ -12,7 +12,7 @@ config file to install the Deep Security VM Extension on an existing virtual mac
 
 ### Preparing Deep Security Manager (DSM) information (required for both ASM and ARM)
 
-1. Copy the text below to a text file named `public.config`, and customize the content. (Note: replace *DSM_Host* and *DSM_Port* with actual values)
+- Copy the text below to a text file named `public.config`, and customize the content. (Note: replace *DSM_Host* and *DSM_Port* with actual values)
 ```
 {
     "DSMname": "<DSM_Host>",
@@ -21,7 +21,7 @@ config file to install the Deep Security VM Extension on an existing virtual mac
 }
 ```
 
-2. Copy the text below to a text file named `private.config` (Note: replace *DSM_tenant_id* and *DSM_tenant_password* with actual values)
+- Copy the text below to a text file named `private.config` (Note: replace *DSM_tenant_id* and *DSM_tenant_password* with actual values)
 ```
 {
     "tenantID": "<DSM_tenant_id>" ,
@@ -31,8 +31,8 @@ config file to install the Deep Security VM Extension on an existing virtual mac
 
 ### To add the Deep Security VM Extension for Azure Classic Compute (ASM)
 
-1. Open Azure Powershell.
-2. Login in Azure Classic (ASM) by executing these commands in PowerShell:
+- Open Azure Powershell.
+- Login in Azure Classic (ASM) by executing these commands in PowerShell:
 ```
 # Pop-up login frame and login into Azure
 Add-AzureAccount
@@ -46,7 +46,7 @@ Set-AzureSubscription -SubscriptionId <change-with-subscription-id> -CurrentStor
 # Select active subscription to be used for current session
 Select-AzureSubscription -SubscriptionId <change-with-subscription-id>
 ```
-3.  Use the scripts below to add the Deep Security VM Extension according to the VM operating system:
+- Use the scripts below to add the Deep Security VM Extension according to the VM operating system:
 
 *Windows:*
 ```
@@ -59,8 +59,8 @@ Select-AzureSubscription -SubscriptionId <change-with-subscription-id>
 
 ### To add the Deep Security VM Extension for Azure Compute (ARM)
 
-1. Open Azure Powershell.
-2. Log in to Azure Resource Management by executing these commands in PowerShell:
+- Open Azure Powershell.
+- Log in to Azure Resource Management by executing these commands in PowerShell:
 ```
 # Pop-up login frame and login into Azure
 Login-AzureRmAccount
