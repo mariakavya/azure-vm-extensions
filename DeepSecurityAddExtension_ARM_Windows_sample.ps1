@@ -19,8 +19,8 @@ $publicFileContent = Get-Content -Raw -LiteralPath $publicFileName -Encoding UTF
 
 try{
 
-    $dsaExtVersionImages = Get-AzureRmVMExtensionImage -Location $location –PublisherName $dsaExtPublisher -Type $dsaExtName -ErrorAction Stop
-    $ver = $dsaExtVersionImages[$dsaExtVersionImages.Length-1].Version
+    $ver = Get-AzureRmVMExtensionImage -Location $location -PublisherName $dsaExtPublisher -Type $dsaExtName -ErrorAction Stop | Sort-Object -Property Version | Select-Object -Property Version -First 1
+
     if( $ver -match "(\d+\.\d+)\.*") {  # get first two version-number (eg : get A.B from A.B.C.D)
         $ver = $Matches[1]
     }
