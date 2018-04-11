@@ -1,19 +1,18 @@
 # Announcement
 
-We have decided to remove our VM extensions from the Microsoft Azure and Azure Stack Marketplace.  
-To use Deep Security Agent, please try to use deployment scripts directly:  
+Trend Micro has decided to remove its VM extensions from the Microsoft Azure and Azure Stack Marketplace.
+To deploy Deep Security Agent, try using our deployment scripts directly. For more information, see
 https://help.deepsecurity.trendmicro.com/Add-Computers/ug-add-dep-scripts.html
 
-If you really need to deploy via Azure VM extension, please use the custom script extension instead:  
-https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-customscript  
+If it's not possible for you to use our deployment scripts directly, use a custom script extension instead. For more information, see
+https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-customscript
 https://github.com/Azure/custom-script-extension-linux
 
-If you encounter any problem, please contact the Trend Micro open source support team at deepsecurityopensource@trendmicro.com
+If you encounter problems, please contact the Trend Micro open source support team at deepsecurityopensource@trendmicro.com.
 
 # Deploying the Deep Security VM Extension on Azure Virtual Machines Using PowerShell
 
-To automate the process of installing the Deep Security VM Extension, you can use the PowerShell scripts in this repository, along with a customized JSON format
-config file to install the Deep Security VM Extension on an existing virtual machine.
+To automate the process of installing the Deep Security VM Extension, you can use the PowerShell scripts in this repository, along with a customized JSON format config file to install the Deep Security VM Extension on an existing virtual machine.
 
 ## Support
 
